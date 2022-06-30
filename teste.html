@@ -1,0 +1,16 @@
+<html>
+    <?php
+
+$hostname = "localhost";
+$bancodedados = "rato";
+$usuario = "root";
+$senha = "";
+
+$mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
+if ($mysqli->connnect_errno)  {
+    echo "Falha ao connectar: (" . $mysqli->connect_errno . ") " . $mysqli->connect_errno;
+
+}
+
+?>
+</html>
